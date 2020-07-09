@@ -7,7 +7,34 @@
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
-	/****Ipad Portrait 768 Container 750 ****/
+  /****Ipad Portrait 768 Container 750 ****/
+  body{
+    font-size: 21px;
+  }
+  .card1 span, .education span{
+    margin: 3px;
+    font-size: 16px;
+  }
+  .fa-bars:before{
+    content: "\f0c9";
+    font-size: 24px;
+  }
+  h3{
+    font-size: 30px;
+  }
+  p{
+    font-size: 19px;
+  }
+  .about{
+    font-size: 100px;
+  }
+  .front{
+    font-size: 17px;
+  }
+  
+  .card1{
+    height: 1000px;
+  }
 	.my-pic{
         width: 350px;
     }
@@ -90,6 +117,7 @@
     .scroll-btn{
         visibility: hidden;
     }
+    
     body{ font-size:20px;}
     .topnav a:not(:first-child) {display: none;}
   .topnav a.icon {
@@ -112,6 +140,9 @@
 @media (min-width: 768px) {
     .small-logo-mobile {
         display: none;
+      }
+      .card1{
+        height: 500px;
       }
 }
 @media (max-width: 767px) {

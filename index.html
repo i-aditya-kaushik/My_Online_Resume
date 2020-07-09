@@ -9,15 +9,19 @@
         <link href="css/responsive.css" rel="stylesheet" type="text/css">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
         
+        <script src="https://code.createjs.com/1.0.0/createjs.min.js"></script>
         <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
         <script src="./assets/js/smooth-scroll.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
         <title>
             My Online CV
         </title>
     </head>
     <body>
+      <div id="progress" class="loading text-center"><img src="./assets/img/finallogo.png"></div>
+      <div id="gallery">
         <!-------------HEADER---------------->
         <section class="header" id="header">
             <!--header-start-->
@@ -39,7 +43,8 @@
                 </div>
             </div>
         </section>
-
+</div>
+      <div id="hidethis">
         <!-----------Navbar--------------------->
         <div class="nav-bar">
           <nav class="navbar navbar-expand-lg py-3 text-center">
@@ -167,8 +172,8 @@
                   <h3 class="text-center">My Experiences</h3>
                   <ul class="timeline text-justify">
                     <li>
-                      <div class="card card1" style="height: 500px;">
-                        <section class="front" style="height: 500px; padding: 10px;">
+                      <div class="card card1">
+                        <section class="front" style=" padding: 10px;">
                           <h4><span>2020 </span>Summer Intern at MRN Digital</h4>
                           <span>Responsibilities:</span>
                           <span>I was responsible to make a complete web application which was a blogging web app. It had the following notable features:
@@ -179,14 +184,14 @@
                             <b>Duration</b> - June 2020 - Jul 2020<br>
                           <b>Location</b> - Work From Home<span class="btn btn-secondary" style="float: right;margin-top: auto; font-size: 10px;font-family: 'Montserrat', sans-serif;background: black;">[CLICK/TOUCH AND HOLD]</span>
                         </section>
-                        <section class="back text-center" style="background: #fff; margin-top: auto;margin-bottom: auto;">
+                        <section class="back text-center" style="padding-top:200px;height: 500px;background: #fff; margin-top: auto;margin-bottom: auto;">
                           <img src="assets/img/MRN.png">
                         </section>
                       </div>
                     </li>
                     <li>
-                      <div class="card card1" style="height: 500px;">
-                        <section class="front" style="height: 500px; padding: 10px;">
+                      <div class="card card1">
+                        <section class="front" style="padding: 10px;">
                           <h4><span>2019 </span>Summer Intern at WSS</h4>
                           <span>Responsibilities:</span>
                           <span>I was responsible to make an automated WhatsApp newsletter, which responds automatically to messages, manages the subscribers (add or delete). In the initial stages, used Tkinter for GUI, and the entire logic was written in Python with the help of selenium and web scraping, whereas the database was stored in a CSV file. Thereafter, used Django to make the product more versatile. I handled both, the front end and the back end.</span><br>
@@ -199,8 +204,8 @@
                       </div>
                     </li>
                     <li>
-                      <div class="card card1" style="height: 500px;">
-                        <section class="front" style="height: 500px; padding: 10px;">
+                      <div class="card card1">
+                        <section class="front" style=" padding: 10px;">
                           <h4><span>2019 </span>Marketing Manager At LegalMind</h4>
                           <span>Responsibilities:</span><br>
                           <span>Managed a team of 15 people and worked together in order to get the best out of each of them. Worked closely with the design team and worked on various ideas as well. Also was responsible for the strategies to get more pan India exposure for the company, along with recruiting some legitimate set of individuals for the campus ambassador position.</span><br>
@@ -265,23 +270,23 @@
           </div>
           <!-------------PROJECTS------------->
           <div class="projects" id="projects">
-            <div class="container mw-100">
+            <div class="container">
               <h1 class="text-center">My Projects</h1>
               <p class="text-center">I have worked on various projects throughout my college life. A few prominent ones are</p>
               <div class="row">
-                <div class="col-md-4 offset-md-1">
+                <div class="col-md-4">
                   <div class="projects-box text-justify">
                     <i class="fa fa-line-chart"></i><span><b> VITSPOT TEAM</b></span><br>
                     <p>VITspot is a site/application which acts as a medium to communicate among all VITians by sharing the question papers, allowing two people to share cabs and allow a person to find his/her roommate. It also aims to keep a VITian up to date with all the happenings in and around the campus being updated. We also keep contacting and collaborating with other clubs to help with the online marketing of their event. Also helped in the UI/UX prototyping and development. Was a direct manager with a few initial members. VISIT <br><u><a href="https://www.vitspot.com" target="__blank__"></u>www.vitspot.com</a> or checkout our application on google play store.</p>
                   </div>
                 </div>
-                <div class="col-md-3" style="margin-top: auto;margin-bottom: auto;">
+                <div class="col-md-4" style="margin-top: auto;margin-bottom: auto;">
                   <div class="projects-box text-justify">
                     <i class="fa fa-th"></i><span> Unbeatable Tic-Tac-Toe</span><br>
                     <p>Made an unbeatable Tic Tac Toe in programmed in python language. The interface was created with an interactive library of Pygame, which allowed me to make a beautiful interface for the same.</p>
                   </div>
                 </div>
-                <div class="col-md-3" style="margin-top: auto;margin-bottom: auto;">
+                <div class="col-md-4" style="margin-top: auto;margin-bottom: auto;">
                   <div class="projects-box text-justify">
                     <i class="fa fa-exclamation-circle"></i><span> Track_Covid</span><br>
                     <p>Made two different templates for India's map along with the essentials like logo, state's code, etc. Got the data of state-wise COVID-19 cases in India and store it in the street code format in a CSV file. Thereafter, I edited and wrote over the template using Pillow and other relevant libraries which might come in handy.Finally, automated the process of posting on Instagram.
@@ -385,8 +390,8 @@
               <div class="col-md-5 offset-md-1">
                 <ul class="timeline text-justify">
                   <li>
-                    <div class="card card1" style="height: 500px;">
-                      <section class="front" style="height: 500px; padding: 10px;">
+                    <div class="card card1">
+                      <section class="front" style=" padding: 10px;">
                         <h4><span>2018 </span>Swatcch Bharat Abhiyan Summer Intern</h4>
                         <span>Initiatives:</span>
                         <span>
@@ -405,8 +410,8 @@
               <div class="col-md-5 ">
                 <ul class="timeline text-justify">
                   <li>
-                    <div class="card card1" style="height: 500px;">
-                      <section class="front" style="height: 500px; padding: 10px;">
+                    <div class="card card1">
+                      <section class="front" style=" padding: 10px;">
                         <h4><span>2015 </span>Community Mobilizer at Teach India, TOI</h4>
                         <span>About the program:</span>
                         <span>
@@ -428,8 +433,8 @@
               <div class="col-md-5 offset-md-3">
                 <ul class="timeline text-justify">
                   <li>
-                    <div class="card card1" style="height: 500px;">
-                      <section class="front" style="height: 500px; padding: 10px;">
+                    <div class="card card1">
+                      <section class="front" style=" padding: 10px;">
                         <h4><span>2014 </span>Volunteer: Project Citizen, India</h4>
                           <span>About the program:</span>
                           <span>
@@ -450,6 +455,13 @@
             <div class="container text-center">
               <h3>CONTACT ME!</h3>
               <p class="text-center">Let's get in touch!</p>
+              <form class="text-center form1" action="/#contact" data-netlify="true">
+                <input type="text" name="name" id="name1" placeholder="Full Name">
+                <input type="email" name="email" id="email1" placeholder="Email">
+                <textarea name="message" id="message1"cols="30" rows="10" placeholder="Message"></textarea>
+                <div class="text-center" data-netlify-recaptcha="true"></div>  
+                <input type="submit" value="Send Me a Message!">  
+              </form>
               <div class="row">
               <div class="col-md-6">
                 <i class="fa fa-phone"></i><p>Contact Number: +91 9999996680</p>
@@ -464,12 +476,440 @@
               View my Resume!</button></a>
           </div>
           </div>
+        </div>
+          <script>
+            
+    let body = document.getElementsByTagName('body');
+    let progress = document.getElementById('progress');
+    let gallery = document.getElementById('gallery');
+    let hidethis = document.getElementById('hidethis');
+
+    var queue = new createjs.LoadQueue(false);
+ 
+    queue.on("fileload", handleFileComplete);
+    queue.on('progress', event => {
+        let progress = Math.floor(event.progress * 100 + 40);
+        this.progress.style.width = (progress)+'%';
+        if (progress-40 == 100) {
+            this.progress.style.width = (100)+'%';
+            document.querySelector('body').style.background = 'white'
+            document.querySelector('body').style.overflow = 'scroll'
+        }
+    })
+    queue.on('complete', event => {
+        gallery.classList.add('fadeIn');
+        setTimeout(() => {
+            progress.classList.add('expand');
+            hidethis.style.opacity = 1;
+            hidethis.removeAttribute('opacity');
+        },500)
+        setTimeout(()=>{
+          progress.style.display = 'none';
+        },4000)
+    })
+    
+    queue.loadFile('./assets/img/1_more.png');
+    queue.loadFile('./assets/img/4.png');
+    queue.loadFile('./assets/img/5.png');
+    queue.loadFile('./assets/img/7.png');
+    queue.loadFile('./assets/img/8.png');
+    queue.loadFile('./assets/img/background-m.jpg');
+    queue.loadFile('./assets/img/home.png');
+    queue.loadFile('./assets/img/MRN.png');
+    queue.loadFile('./assets/img/my-pic2.png');
+    queue.loadFile('./assets/img/mypic.png');
+
+    function handleFileComplete(event) {
+       
+     var item = event.item; // A reference to the item that was passed in to the LoadQueue
+     var type = item.type;
+
+     
+
+    }
+          </script>
+          <script>
+            let testForm = document.querySelector("#contact form");
+            
+            testForm.addEventListener('submit', e => {
+              e.preventDefault();
+              
+              const formData = new FormData(testForm);
+              fetch(testForm.getAttribute('action'), {
+                method: 'POST',
+                headers: {
+                  'Accept': 'application/x-www-form-urlencoded;charset=UTF-8',
+                  'Content-Type': 'application/x-www-form-urlencoded;charset=UTF-8'
+                },
+                body: new URLSearchParams(formData).toString()
+              })
+              .then(res => {
+                if($('#message1').serialize()=="message="){
+                  throw 'The message can not be blank.';
+                  return;
+                }
+                if($('#name1').serialize()=="name="){
+                  throw 'The name can not be blank.';
+                  return;
+                }
+                if($('#email1').serialize()=="email="){
+                  throw 'The email can not be blank.';
+                  return;
+                }
+                if(res.status!=200){
+                  throw 'There was some error. Try again later';
+                  return;
+                }
+                else if (res) {
+                  M.toast({
+                    html: 'Thank you for your Message.<br> I will contact you soon!',
+                  });
+                }
+              })
+              .catch(err =>{
+                M.toast({
+                    html: err,
+                });
+              })
+            });
+          
+          </script>
     </body>
 </html>
 
 
 <script type="text/javascript">
-	var TxtType = function(el, toRotate, period) {
+
+  (function ($, anim) {
+  'use strict';
+
+  var _defaults = {
+    accordion: true,
+    onOpenStart: undefined,
+    onOpenEnd: undefined,
+    onCloseStart: undefined,
+    onCloseEnd: undefined,
+    inDuration: 300,
+    outDuration: 300
+  };
+
+  /**
+   * @class
+   *
+   */
+
+  var Collapsible = function (_Component) {
+    _inherits(Collapsible, _Component);
+
+    /**
+     * Construct Collapsible instance
+     * @constructor
+     * @param {Element} el
+     * @param {Object} options
+     */
+    function Collapsible(el, options) {
+      _classCallCheck(this, Collapsible);
+
+      var _this3 = _possibleConstructorReturn(this, (Collapsible.__proto__ || Object.getPrototypeOf(Collapsible)).call(this, Collapsible, el, options));
+
+      _this3.el.M_Collapsible = _this3;
+
+      /**
+       * Options for the collapsible
+       * @member Collapsible#options
+       * @prop {Boolean} [accordion=false] - Type of the collapsible
+       * @prop {Function} onOpenStart - Callback function called before collapsible is opened
+       * @prop {Function} onOpenEnd - Callback function called after collapsible is opened
+       * @prop {Function} onCloseStart - Callback function called before collapsible is closed
+       * @prop {Function} onCloseEnd - Callback function called after collapsible is closed
+       * @prop {Number} inDuration - Transition in duration in milliseconds.
+       * @prop {Number} outDuration - Transition duration in milliseconds.
+       */
+      _this3.options = $.extend({}, Collapsible.defaults, options);
+
+      // Setup tab indices
+      _this3.$headers = _this3.$el.children('li').children('.collapsible-header');
+      _this3.$headers.attr('tabindex', 0);
+
+      _this3._setupEventHandlers();
+
+      // Open first active
+      var $activeBodies = _this3.$el.children('li.active').children('.collapsible-body');
+      if (_this3.options.accordion) {
+        // Handle Accordion
+        $activeBodies.first().css('display', 'block');
+      } else {
+        // Handle Expandables
+        $activeBodies.css('display', 'block');
+      }
+      return _this3;
+    }
+
+    _createClass(Collapsible, [{
+      key: "destroy",
+
+
+      /**
+       * Teardown component
+       */
+      value: function destroy() {
+        this._removeEventHandlers();
+        this.el.M_Collapsible = undefined;
+      }
+
+      /**
+       * Setup Event Handlers
+       */
+
+    }, {
+      key: "_setupEventHandlers",
+      value: function _setupEventHandlers() {
+        var _this4 = this;
+
+        this._handleCollapsibleClickBound = this._handleCollapsibleClick.bind(this);
+        this._handleCollapsibleKeydownBound = this._handleCollapsibleKeydown.bind(this);
+        this.el.addEventListener('click', this._handleCollapsibleClickBound);
+        this.$headers.each(function (header) {
+          header.addEventListener('keydown', _this4._handleCollapsibleKeydownBound);
+        });
+      }
+
+      /**
+       * Remove Event Handlers
+       */
+
+    }, {
+      key: "_removeEventHandlers",
+      value: function _removeEventHandlers() {
+        var _this5 = this;
+
+        this.el.removeEventListener('click', this._handleCollapsibleClickBound);
+        this.$headers.each(function (header) {
+          header.removeEventListener('keydown', _this5._handleCollapsibleKeydownBound);
+        });
+      }
+
+      /**
+       * Handle Collapsible Click
+       * @param {Event} e
+       */
+
+    }, {
+      key: "_handleCollapsibleClick",
+      value: function _handleCollapsibleClick(e) {
+        var $header = $(e.target).closest('.collapsible-header');
+        if (e.target && $header.length) {
+          var $collapsible = $header.closest('.collapsible');
+          if ($collapsible[0] === this.el) {
+            var $collapsibleLi = $header.closest('li');
+            var $collapsibleLis = $collapsible.children('li');
+            var isActive = $collapsibleLi[0].classList.contains('active');
+            var index = $collapsibleLis.index($collapsibleLi);
+
+            if (isActive) {
+              this.close(index);
+            } else {
+              this.open(index);
+            }
+          }
+        }
+      }
+
+      /**
+       * Handle Collapsible Keydown
+       * @param {Event} e
+       */
+
+    }, {
+      key: "_handleCollapsibleKeydown",
+      value: function _handleCollapsibleKeydown(e) {
+        if (e.keyCode === 13) {
+          this._handleCollapsibleClickBound(e);
+        }
+      }
+
+      /**
+       * Animate in collapsible slide
+       * @param {Number} index - 0th index of slide
+       */
+
+    }, {
+      key: "_animateIn",
+      value: function _animateIn(index) {
+        var _this6 = this;
+
+        var $collapsibleLi = this.$el.children('li').eq(index);
+        if ($collapsibleLi.length) {
+          var $body = $collapsibleLi.children('.collapsible-body');
+
+          anim.remove($body[0]);
+          $body.css({
+            display: 'block',
+            overflow: 'hidden',
+            height: 0,
+            paddingTop: '',
+            paddingBottom: ''
+          });
+
+          var pTop = $body.css('padding-top');
+          var pBottom = $body.css('padding-bottom');
+          var finalHeight = $body[0].scrollHeight;
+          $body.css({
+            paddingTop: 0,
+            paddingBottom: 0
+          });
+
+          anim({
+            targets: $body[0],
+            height: finalHeight,
+            paddingTop: pTop,
+            paddingBottom: pBottom,
+            duration: this.options.inDuration,
+            easing: 'easeInOutCubic',
+            complete: function (anim) {
+              $body.css({
+                overflow: '',
+                paddingTop: '',
+                paddingBottom: '',
+                height: ''
+              });
+
+              // onOpenEnd callback
+              if (typeof _this6.options.onOpenEnd === 'function') {
+                _this6.options.onOpenEnd.call(_this6, $collapsibleLi[0]);
+              }
+            }
+          });
+        }
+      }
+
+      /**
+       * Animate out collapsible slide
+       * @param {Number} index - 0th index of slide to open
+       */
+
+    }, {
+      key: "_animateOut",
+      value: function _animateOut(index) {
+        var _this7 = this;
+
+        var $collapsibleLi = this.$el.children('li').eq(index);
+        if ($collapsibleLi.length) {
+          var $body = $collapsibleLi.children('.collapsible-body');
+          anim.remove($body[0]);
+          $body.css('overflow', 'hidden');
+          anim({
+            targets: $body[0],
+            height: 0,
+            paddingTop: 0,
+            paddingBottom: 0,
+            duration: this.options.outDuration,
+            easing: 'easeInOutCubic',
+            complete: function () {
+              $body.css({
+                height: '',
+                overflow: '',
+                padding: '',
+                display: ''
+              });
+
+              // onCloseEnd callback
+              if (typeof _this7.options.onCloseEnd === 'function') {
+                _this7.options.onCloseEnd.call(_this7, $collapsibleLi[0]);
+              }
+            }
+          });
+        }
+      }
+
+      /**
+       * Open Collapsible
+       * @param {Number} index - 0th index of slide
+       */
+
+    }, {
+      key: "open",
+      value: function open(index) {
+        var _this8 = this;
+
+        var $collapsibleLi = this.$el.children('li').eq(index);
+        if ($collapsibleLi.length && !$collapsibleLi[0].classList.contains('active')) {
+          // onOpenStart callback
+          if (typeof this.options.onOpenStart === 'function') {
+            this.options.onOpenStart.call(this, $collapsibleLi[0]);
+          }
+
+          // Handle accordion behavior
+          if (this.options.accordion) {
+            var $collapsibleLis = this.$el.children('li');
+            var $activeLis = this.$el.children('li.active');
+            $activeLis.each(function (el) {
+              var index = $collapsibleLis.index($(el));
+              _this8.close(index);
+            });
+          }
+
+          // Animate in
+          $collapsibleLi[0].classList.add('active');
+          this._animateIn(index);
+        }
+      }
+
+      /**
+       * Close Collapsible
+       * @param {Number} index - 0th index of slide
+       */
+
+    }, {
+      key: "close",
+      value: function close(index) {
+        var $collapsibleLi = this.$el.children('li').eq(index);
+        if ($collapsibleLi.length && $collapsibleLi[0].classList.contains('active')) {
+          // onCloseStart callback
+          if (typeof this.options.onCloseStart === 'function') {
+            this.options.onCloseStart.call(this, $collapsibleLi[0]);
+          }
+
+          // Animate out
+          $collapsibleLi[0].classList.remove('active');
+          this._animateOut(index);
+        }
+      }
+    }], [{
+      key: "init",
+      value: function init(els, options) {
+        return _get(Collapsible.__proto__ || Object.getPrototypeOf(Collapsible), "init", this).call(this, this, els, options);
+      }
+
+      /**
+       * Get Instance
+       */
+
+    }, {
+      key: "getInstance",
+      value: function getInstance(el) {
+        var domElem = !!el.jquery ? el[0] : el;
+        return domElem.M_Collapsible;
+      }
+    }, {
+      key: "defaults",
+      get: function () {
+        return _defaults;
+      }
+    }]);
+
+    return Collapsible;
+  }(Component);
+
+  M.Collapsible = Collapsible;
+
+  if (M.jQueryLoaded) {
+    M.initializeJqueryWrapper(Collapsible, 'collapsible', 'M_Collapsible');
+  }
+})(cash, M.anime);
+  </script>
+  <script>
+    var TxtType = function(el, toRotate, period) {
 		  this.toRotate = toRotate;
 		  this.el = el;
 		  this.loopNum = 0;
@@ -509,7 +949,6 @@
 		  that.tick();
 		  }, delta);
 	  };
-  
 	  window.onload = function() {
       var c1 = 0;
 		  var elements = document.getElementsByClassName('typewrite');
@@ -528,8 +967,322 @@
 	  };
     $('.navbar-nav>li>a').on('click', function(){
     $('.navbar-collapse').collapse('hide');
-    });
+    });  
   </script>
   <script>
     var scroll = new SmoothScroll('a[href*="#"]');
+  </script>
+  <script>
+    var Toast = function () {
+    function Toast(options) {
+      _classCallCheck(this, Toast);
+
+      /**
+       * Options for the toast
+       * @member Toast#options
+       */
+      this.options = $.extend({}, Toast.defaults, options);
+      this.message = this.options.html;
+
+      /**
+       * Describes current pan state toast
+       * @type {Boolean}
+       */
+      this.panning = false;
+
+      /**
+       * Time remaining until toast is removed
+       */
+      this.timeRemaining = this.options.displayLength;
+
+      if (Toast._toasts.length === 0) {
+        Toast._createContainer();
+      }
+
+      // Create new toast
+      Toast._toasts.push(this);
+      var toastElement = this._createToast();
+      toastElement.M_Toast = this;
+      this.el = toastElement;
+      this.$el = $(toastElement);
+      this._animateIn();
+      this._setTimer();
+    }
+
+    _createClass(Toast, [{
+      key: "_createToast",
+
+
+      /**
+       * Create toast and append it to toast container
+       */
+      value: function _createToast() {
+        var toast = document.createElement('div');
+        toast.classList.add('toast');
+
+        // Add custom classes onto toast
+        if (!!this.options.classes.length) {
+          $(toast).addClass(this.options.classes);
+        }
+
+        // Set content
+        if (typeof HTMLElement === 'object' ? this.message instanceof HTMLElement : this.message && typeof this.message === 'object' && this.message !== null && this.message.nodeType === 1 && typeof this.message.nodeName === 'string') {
+          toast.appendChild(this.message);
+
+          // Check if it is jQuery object
+        } else if (!!this.message.jquery) {
+          $(toast).append(this.message[0]);
+
+          // Insert as html;
+        } else {
+          toast.innerHTML = this.message;
+        }
+
+        // Append toasft
+        Toast._container.appendChild(toast);
+        return toast;
+      }
+
+      /**
+       * Animate in toast
+       */
+
+    }, {
+      key: "_animateIn",
+      value: function _animateIn() {
+        // Animate toast in
+        anim({
+          targets: this.el,
+          top: 0,
+          opacity: 1,
+          duration: this.options.inDuration,
+          easing: 'easeOutCubic'
+        });
+      }
+
+      /**
+       * Create setInterval which automatically removes toast when timeRemaining >= 0
+       * has been reached
+       */
+
+    }, {
+      key: "_setTimer",
+      value: function _setTimer() {
+        var _this29 = this;
+
+        if (this.timeRemaining !== Infinity) {
+          this.counterInterval = setInterval(function () {
+            // If toast is not being dragged, decrease its time remaining
+            if (!_this29.panning) {
+              _this29.timeRemaining -= 20;
+            }
+
+            // Animate toast out
+            if (_this29.timeRemaining <= 0) {
+              _this29.dismiss();
+            }
+          }, 20);
+        }
+      }
+
+      /**
+       * Dismiss toast with animation
+       */
+
+    }, {
+      key: "dismiss",
+      value: function dismiss() {
+        var _this30 = this;
+
+        window.clearInterval(this.counterInterval);
+        var activationDistance = this.el.offsetWidth * this.options.activationPercent;
+
+        if (this.wasSwiped) {
+          this.el.style.transition = 'transform .05s, opacity .05s';
+          this.el.style.transform = "translateX(" + activationDistance + "px)";
+          this.el.style.opacity = 0;
+        }
+
+        anim({
+          targets: this.el,
+          opacity: 0,
+          marginTop: -40,
+          duration: this.options.outDuration,
+          easing: 'easeOutExpo',
+          complete: function () {
+            // Call the optional callback
+            if (typeof _this30.options.completeCallback === 'function') {
+              _this30.options.completeCallback();
+            }
+            // Remove toast from DOM
+            _this30.$el.remove();
+            Toast._toasts.splice(Toast._toasts.indexOf(_this30), 1);
+            if (Toast._toasts.length === 0) {
+              Toast._removeContainer();
+            }
+          }
+        });
+      }
+    }], [{
+      key: "getInstance",
+
+
+      /**
+       * Get Instance
+       */
+      value: function getInstance(el) {
+        var domElem = !!el.jquery ? el[0] : el;
+        return domElem.M_Toast;
+      }
+
+      /**
+       * Append toast container and add event handlers
+       */
+
+    }, {
+      key: "_createContainer",
+      value: function _createContainer() {
+        var container = document.createElement('div');
+        container.setAttribute('id', 'toast-container');
+
+        // Add event handler
+        container.addEventListener('touchstart', Toast._onDragStart);
+        container.addEventListener('touchmove', Toast._onDragMove);
+        container.addEventListener('touchend', Toast._onDragEnd);
+
+        container.addEventListener('mousedown', Toast._onDragStart);
+        document.addEventListener('mousemove', Toast._onDragMove);
+        document.addEventListener('mouseup', Toast._onDragEnd);
+
+        document.body.appendChild(container);
+        Toast._container = container;
+      }
+
+      /**
+       * Remove toast container and event handlers
+       */
+
+    }, {
+      key: "_removeContainer",
+      value: function _removeContainer() {
+        // Add event handler
+        document.removeEventListener('mousemove', Toast._onDragMove);
+        document.removeEventListener('mouseup', Toast._onDragEnd);
+
+        $(Toast._container).remove();
+        Toast._container = null;
+      }
+
+      /**
+       * Begin drag handler
+       * @param {Event} e
+       */
+
+    }, {
+      key: "_onDragStart",
+      value: function _onDragStart(e) {
+        if (e.target && $(e.target).closest('.toast').length) {
+          var $toast = $(e.target).closest('.toast');
+          var toast = $toast[0].M_Toast;
+          toast.panning = true;
+          Toast._draggedToast = toast;
+          toast.el.classList.add('panning');
+          toast.el.style.transition = '';
+          toast.startingXPos = Toast._xPos(e);
+          toast.time = Date.now();
+          toast.xPos = Toast._xPos(e);
+        }
+      }
+
+      /**
+       * Drag move handler
+       * @param {Event} e
+       */
+
+    }, {
+      key: "_onDragMove",
+      value: function _onDragMove(e) {
+        if (!!Toast._draggedToast) {
+          e.preventDefault();
+          var toast = Toast._draggedToast;
+          toast.deltaX = Math.abs(toast.xPos - Toast._xPos(e));
+          toast.xPos = Toast._xPos(e);
+          toast.velocityX = toast.deltaX / (Date.now() - toast.time);
+          toast.time = Date.now();
+
+          var totalDeltaX = toast.xPos - toast.startingXPos;
+          var activationDistance = toast.el.offsetWidth * toast.options.activationPercent;
+          toast.el.style.transform = "translateX(" + totalDeltaX + "px)";
+          toast.el.style.opacity = 1 - Math.abs(totalDeltaX / activationDistance);
+        }
+      }
+
+      /**
+       * End drag handler
+       */
+
+    }, {
+      key: "_onDragEnd",
+      value: function _onDragEnd() {
+        if (!!Toast._draggedToast) {
+          var toast = Toast._draggedToast;
+          toast.panning = false;
+          toast.el.classList.remove('panning');
+
+          var totalDeltaX = toast.xPos - toast.startingXPos;
+          var activationDistance = toast.el.offsetWidth * toast.options.activationPercent;
+          var shouldBeDismissed = Math.abs(totalDeltaX) > activationDistance || toast.velocityX > 1;
+
+          // Remove toast
+          if (shouldBeDismissed) {
+            toast.wasSwiped = true;
+            toast.dismiss();
+
+            // Animate toast back to original position
+          } else {
+            toast.el.style.transition = 'transform .2s, opacity .2s';
+            toast.el.style.transform = '';
+            toast.el.style.opacity = '';
+          }
+          Toast._draggedToast = null;
+        }
+      }
+
+      /**
+       * Get x position of mouse or touch event
+       * @param {Event} e
+       */
+
+    }, {
+      key: "_xPos",
+      value: function _xPos(e) {
+        if (e.targetTouches && e.targetTouches.length >= 1) {
+          return e.targetTouches[0].clientX;
+        }
+        // mouse event
+        return e.clientX;
+      }
+
+      /**
+       * Remove all toasts
+       */
+
+    }, {
+      key: "dismissAll",
+      value: function dismissAll() {
+        for (var toastIndex in Toast._toasts) {
+          Toast._toasts[toastIndex].dismiss();
+        }
+      }
+    }, {
+      key: "defaults",
+      get: function () {
+        return _defaults;
+      }
+    }]);
+
+    return Toast;
+  }();
+
+  
   </script>
