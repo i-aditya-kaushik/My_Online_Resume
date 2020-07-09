@@ -728,8 +728,8 @@ form{
 
 .loading h1,.loading img{
 	animation: rotation 1.5s infinite ease-in-out;
-	height: 320px;
-	width: 400px;
+	height: 160px;
+	width: 200px;
 	display: flexbox;
 	align-items:center;
 	font-family: 'Montserrat', sans-serif;
