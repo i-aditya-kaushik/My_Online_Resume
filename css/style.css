@@ -353,12 +353,13 @@ color: #fff;
 .back {
 	transform: rotateY(180deg);
 }
-.card1:active {
+/* .card1:hover {
 	transform: rotateY(180deg);
 	transition-duration: 1.5s;
-}
+} */
 .card1 {
 	transition-duration: 1.5s;
+	border: 5px solid red;
 }
 .front {
 	position: absolute;
@@ -426,9 +427,14 @@ color: #fff;
 }
 .card-achieve {
 	box-shadow: 0 20px 8px -10px rgba(0, 0, 0, 0.1);
-	height: 250;
-	border-radius: 20;
 }
+
+
+@media (min-width: 993px) {
+	.card-achieve {
+	  height: 300;
+	}
+  }
 
 @media (min-width: 767px) {
 	.card-achieve {
